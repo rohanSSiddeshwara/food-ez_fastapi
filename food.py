@@ -81,6 +81,13 @@ def read_orders_username(user_name: str):
     data=pd.read_csv("data_sets/Orders.csv",parse_dates=True)
     return data.loc[data["user_name"]==user_name][["user_name","food_name","canteen_name","price","quantity","total_price"]].to_dict(orient='index')
 
+@app.get("/orders/create/clear")
+def clear():
+    data=pd.read_csv("data_sets/Orders.csv")
+    data=data.iloc[0:0]
+    data.to_csv("data_sets/Orders.csv",index=False)
+    return {"message":"Orders cleared"}
+
 @app.get("/food")
 def food():
     data=pd.read_csv("data_sets/food.csv")
