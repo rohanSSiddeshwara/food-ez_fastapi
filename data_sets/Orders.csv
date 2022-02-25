@@ -1,0 +1,3 @@
+user_name,food_name,price,quantity,total_price,payment_id,order_id,signature,canteen_name
+test_user,dosa,50.0,1,50.0,pay_J03yOdMwQhm8cs,order_J03y0rSHVGvcBl,61239cb864b01104b174ffb206386ac107c10004528118af4123785253a606bd,udupi
+test_user,egg roll,50.0,1,50.0,pay_J03yOdMwQhm8cs,order_J03y0rSHVGvcBl,61239cb864b01104b174ffb206386ac107c10004528118af4123785253a606bd,udupi
